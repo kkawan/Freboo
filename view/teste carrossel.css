@@ -456,14 +456,14 @@ section {
 }
 
 .about-us-title {
-    font-family: 'Caudex', sans-serif;
+    font-family: var(--main-text-family);
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 0.5rem;
 }
 
 .about-us-header h3 {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--secondary-text-family);
     font-size: 1.2rem;
     color: #666;
 }
@@ -542,13 +542,17 @@ section {
 .content h2 {
     margin-bottom: 12px;
     scale: 0.7;
+    font-family: var(--secondary-text-family);
+    font-size: 36px;
+    color: antiquewhite;
 }
 
 .content p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.5;
     color: #d1d1d1;
     transform: translateY(50%);
+    font-family: var(--secondary-text-family);
 }
 
 /* Text Hover Effect */
@@ -562,3 +566,40 @@ section {
     transform: translateY(0);
 }
 
+.container-botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+
+button {
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    color: #3B3B3B;
+    cursor: pointer;
+    font-family: var(--secondary-text-family);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 1em 2.3em;
+    text-align: center;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+button:disabled {
+    pointer-events: none;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
