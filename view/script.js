@@ -36,3 +36,25 @@ document.addEventListener('DOMContentLoaded', () => {
         faixa.style.animationPlayState = 'running';
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observerOptions = {
+        threshold: 0.7 // Inicia o efeito quando 10% do elemento está visível
+    };
+
+    const fadeInObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in-visible');
+                observer.unobserve(entry.target); // Para não observar novamente após a primeira exibição
+            }
+        });
+    }, observerOptions);
+
+    fadeElements.forEach(el => {
+        fadeInObserver.observe(el);
+    });
+});
