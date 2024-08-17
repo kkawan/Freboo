@@ -4,18 +4,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const larguraItem = itens[0].offsetWidth;
     let contadorClones = 0;
 
-    // clonar os itens (nessessario para o scroll infinito)
+    //clone
     itens.forEach(item => {
         const clone = item.cloneNode(true);
         faixa.appendChild(clone);
         contadorClones++;
     });
     
-    // ajustar a velocidade/duracao da animacao
+    // velocidadee
     const duracaoBase = 30;
     faixa.style.animationDuration = `${duracaoBase * (contadorClones / itens.length)}s`;
     
-    // armazenar a duração original da animação para nao ter reset apos o primeiro loop
+    // impede o reset por 1 loop
     const duracaoOriginal = faixa.style.animationDuration;
 
     // reiniciar a animação no final para evitar um salto
