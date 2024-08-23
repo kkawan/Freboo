@@ -206,7 +206,6 @@ a {
 .card {
     position: relative;
     background: #fff;
-    border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -294,13 +293,13 @@ a {
     width: 100%;
     height: 250px;
     overflow: hidden; 
-    border-radius: 12px 12px 0 0; 
+    
 }
 
 .image-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Cobre toda a área da box mantendo a proporção */
+    object-fit: cover; 
   
 }
 
