@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const fadeElements = document.querySelectorAll('.fade-in');
 
     const observerOptions = {
-        threshold: 0.7 // Inicia o efeito quando 10% do elemento está visível
+        threshold: 0.7 // Inicia o efeito quando 70% do elemento está visível
     };
 
     const fadeInObserver = new IntersectionObserver((entries, observer) => {

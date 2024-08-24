@@ -128,6 +128,8 @@ a {
     border-radius: 4px;
     color: black;
     width: 100%;
+    transition: background-color 0.5s ease;
+    
 }
 
 .navigation-link:hover {

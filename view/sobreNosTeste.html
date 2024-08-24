@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Poppins:wght@400;600&display=swap"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <title>Sobre Nós</title>
 </head>
 <body>
@@ -55,8 +56,7 @@
     </header>
     <!-- Main content -->
     <section class="about-us">
-        <div class="dots_border"></div>
-        <div class="about-us-header fade-in">
+        <div class="about-us-header">
             <h1 class="about-us-title">Sobre Nós</h1>
             <h3>Conheça nossa equipe dedicada</h3>
         </div>
@@ -155,4 +155,27 @@
     </footer>
     
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observerOptions = {
+        threshold: 0.7 // Inicia o efeito quando 70% do elemento está visível
+    };
+
+    const fadeInObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in-visible');
+                observer.unobserve(entry.target); // Para não observar novamente após a primeira exibição
+            }
+        });
+    }, observerOptions);
+
+    fadeElements.forEach(el => {
+        fadeInObserver.observe(el);
+    });
+});
+</script>
 </html>
