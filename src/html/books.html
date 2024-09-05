@@ -60,55 +60,168 @@
         <h1 class="alinhar-centro">Biblioteca Freboo</h1>
         <h3 class="alinhar-centro">Explore nosso acervo!</h3>
 
+        <div class="overlay" id="overlay" onclick="closeRectangle()"></div>
+
         <div class="alinhar-grid">
-            <div class="item-carrossel">
+            <div class="item-carrossel" onclick="expandRectangle(this, 'info1')">
                 <img src="../../img/livro 1.jpg" alt="Imagem 1">
             </div>
 
-            <div class="item-carrossel">
+            <div class="item-carrossel" onclick="expandRectangle(this, 'info2')">
                 <img src="../../img/livro 2.jpg" alt="Imagem 2">
             </div>
 
-            <div class="item-carrossel">
+            <div class="item-carrossel" onclick="expandRectangle(this, 'info3')">
                 <img src="../../img/livro 3.jpg" alt="Imagem 3">
             </div>
 
-            <div class="item-carrossel">
+            <div class="item-carrossel" onclick="expandRectangle(this, 'info4')">
                 <img src="../../img/livro 4.jpeg" alt="Imagem 4">
             </div>
 
-            <div class="item-carrossel">
+            <div class="item-carrossel" onclick="expandRectangle(this, 'info5')">
                 <img src="../../img/livro 5.jpeg" alt="Imagem 5">
             </div>
 
-            <div class="item-carrossel">
+            <div class="item-carrossel" onclick="expandRectangle(this, 'info6')">
                 <img src="../../img/livro 6.jpg" alt="Imagem 6">
             </div>
 
-            <div class="item-carrossel">
+            <div class="item-carrossel" onclick="expandRectangle(this, 'info7')">
                 <img src="../../img/livro 7.jpg" alt="Imagem 7">
             </div>
 
-            <div class="item-carrossel">
+            <div class="item-carrossel" onclick="expandRectangle(this, 'info8')">
                 <img src="../../img/livro 8.jpg" alt="Imagem 8">
             </div>
 
-            <div class="item-carrossel">
+            <div class="item-carrossel" onclick="expandRectangle(this, 'info9')">
                 <img src="../../img/capaverde.jpg" alt="Imagem 9">
             </div>
 
-            <div class="item-carrossel">
+            <div class="item-carrossel" onclick="expandRectangle(this, 'info10')">
                 <img src="../../img/ocorvo-poe.jpg" alt="Imagem 9">
             </div>
 
-            <div class="item-carrossel">
+            <div class="item-carrossel" onclick="expandRectangle(this, 'info11')">
                 <img src="../../img/tortoarado.jpg" alt="Imagem 9">
             </div>
 
-            <div class="item-carrossel">
+            <div class="item-carrossel" onclick="expandRectangle(this, 'info12')">
                 <img src="../../img/livro 9.jpg" alt="Imagem 9">
             </div>
         </div>
+
+        <div class="info-content" id="info1">
+            <p>Informação sobre livro 1
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare ante turpis, sed sodales ipsum luctus eget. Sed tempus orci arcu, sit amet porta turpis euismod vel. Proin nisl velit, mattis vel nunc in, aliquet finibus odio. In non venenatis arcu. In eu ex eu ex tristique iaculis. Ut ut viverra augue, ut pulvinar massa. Maecenas sed dolor vel odio rhoncus vestibulum. Sed tincidunt tortor in nisl feugiat, et malesuada est tincidunt. Nunc non nunc purus. Quisque eu erat sit amet dolor venenatis facilisis. Quisque non bibendum urna. Praesent eu turpis sem. Nullam orci elit, dignissim ac quam sed, sollicitudin faucibus quam.
+                Cras vulputate consectetur molestie. Suspendisse lacinia, ipsum eu tincidunt pharetra, lorem dui fringilla massa, in condimentum lorem nulla ut purus. Vivamus sodales vulputate libero sit amet viverra. Mauris vulputate velit sem, malesuada volutpat metus aliquet vitae. Morbi varius et erat at sollicitudin. Sed ornare dolor nunc, quis rutrum sem rutrum in. Ut vel leo dui. Nunc vel efficitur purus. Duis eget risus at risus pretium pharetra a id metus. Aenean quis magna vitae ante malesuada sagittis id quis mauris. Aenean venenatis elit nec odio finibus pretium.
+            </p>
+            <div class="container-botao">
+                    <button>Ler</button>
+            </div>
+            
+          </div>
+
+          <div class="info-content" id="info2">
+            <p>Informação sobre livro 2
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare ante turpis, sed sodales ipsum luctus eget. Sed tempus orci arcu, sit amet porta turpis euismod vel. Proin nisl velit, mattis vel nunc in, aliquet finibus odio. In non venenatis arcu. In eu ex eu ex tristique iaculis. Ut ut viverra augue, ut pulvinar massa. Maecenas sed dolor vel odio rhoncus vestibulum. Sed tincidunt tortor in nisl feugiat, et malesuada est tincidunt. Nunc non nunc purus. Quisque eu erat sit amet dolor venenatis facilisis. Quisque non bibendum urna. Praesent eu turpis sem. Nullam orci elit, dignissim ac quam sed, sollicitudin faucibus quam.
+Cras vulputate consectetur molestie. Suspendisse lacinia, ipsum eu tincidunt pharetra, lorem dui fringilla massa, in condimentum lorem nulla ut purus. Vivamus sodales vulputate libero sit amet viverra. Mauris vulputate velit sem, malesuada volutpat metus aliquet vitae. Morbi varius et erat at sollicitudin. Sed ornare dolor nunc, quis rutrum sem rutrum in. Ut vel leo dui. Nunc vel efficitur purus. Duis eget risus at risus pretium pharetra a id metus. Aenean quis magna vitae ante malesuada sagittis id quis mauris. Aenean venenatis elit nec odio finibus pretium.
+            </p>
+            <div class="container-botao">
+                <button>Ler</button>
+          </div>
+
+          <div class="info-content" id="info3">
+            <p>Informação sobre livro 3
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare ante turpis, sed sodales ipsum luctus eget. Sed tempus orci arcu, sit amet porta turpis euismod vel. Proin nisl velit, mattis vel nunc in, aliquet finibus odio. In non venenatis arcu. In eu ex eu ex tristique iaculis. Ut ut viverra augue, ut pulvinar massa. Maecenas sed dolor vel odio rhoncus vestibulum. Sed tincidunt tortor in nisl feugiat, et malesuada est tincidunt. Nunc non nunc purus. Quisque eu erat sit amet dolor venenatis facilisis. Quisque non bibendum urna. Praesent eu turpis sem. Nullam orci elit, dignissim ac quam sed, sollicitudin faucibus quam.
+Cras vulputate consectetur molestie. Suspendisse
+            </p>
+            <div class="container-botao">
+                <button>Ler</button>
+          </div>
+
+          <div class="info-content" id="info4">
+            <p>Informação sobre livro 4
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare ante turpis, sed sodales ipsum luctus eget. Sed tempus orci arcu, sit amet porta turpis euismod vel. Proin nisl velit, mattis vel nunc in, aliquet finibus odio. In non venenatis arcu. In eu ex eu ex tristique iaculis. Ut ut viverra augue, ut pulvinar massa. Maecenas sed dolor vel odio rhoncus vestibulum. Sed tincidunt tortor in nisl feugiat, et malesuada est tincidunt. Nunc non nunc purus. Quisque eu erat sit amet dolor venenatis facilisis. Quisque non bibendum urna. Praesent eu turpis sem. Nullam orci elit, dignissim ac quam sed, sollicitudin faucibus quam.
+Cras vulputate consectetur molestie. Suspendisse
+            </p>
+            <div class="container-botao">
+                <button>Ler</button>
+          </div>
+
+          <div class="info-content" id="info5">
+            <p>Informação sobre livro 5
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare ante turpis, sed sodales ipsum luctus eget. Sed tempus orci arcu, sit amet porta turpis euismod vel. Proin nisl velit, mattis vel nunc in, aliquet finibus odio. In non venenatis arcu. In eu ex eu ex tristique iaculis. Ut ut viverra augue, ut pulvinar massa. Maecenas sed dolor vel odio rhoncus vestibulum. Sed tincidunt tortor in nisl feugiat, et malesuada est tincidunt. Nunc non nunc purus. Quisque eu erat sit amet dolor venenatis facilisis. Quisque non bibendum urna. Praesent eu turpis sem. Nullam orci elit, dignissim ac quam sed, sollicitudin faucibus quam.
+Cras vulputate consectetur molestie. Suspendisse
+            </p>
+            <div class="container-botao">
+                <button>Ler</button>
+          </div>
+
+          <div class="info-content" id="info6">
+            <p>IInformação sobre livro 6
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare ante turpis, sed sodales ipsum luctus eget. Sed tempus orci arcu, sit amet porta turpis euismod vel. Proin nisl velit, mattis vel nunc in, aliquet finibus odio. In non venenatis arcu. In eu ex eu ex tristique iaculis. Ut ut viverra augue, ut pulvinar massa. Maecenas sed dolor vel odio rhoncus vestibulum. Sed tincidunt tortor in nisl feugiat, et malesuada est tincidunt. Nunc non nunc purus. Quisque eu erat sit amet dolor venenatis facilisis. Quisque non bibendum urna. Praesent eu turpis sem. Nullam orci elit, dignissim ac quam sed, sollicitudin faucibus quam.
+Cras vulputate consectetur molestie. Suspendisse
+            </p>
+            <div class="container-botao">
+                <button>Ler</button>
+          </div>
+
+          <div class="info-content" id="info7">
+            <p>Informação sobre livro 7
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare ante turpis, sed sodales ipsum luctus eget. Sed tempus orci arcu, sit amet porta turpis euismod vel. Proin nisl velit, mattis vel nunc in, aliquet finibus odio. In non venenatis arcu. In eu ex eu ex tristique iaculis. Ut ut viverra augue, ut pulvinar massa. Maecenas sed dolor vel odio rhoncus vestibulum. Sed tincidunt tortor in nisl feugiat, et malesuada est tincidunt. Nunc non nunc purus. Quisque eu erat sit amet dolor venenatis facilisis. Quisque non bibendum urna. Praesent eu turpis sem. Nullam orci elit, dignissim ac quam sed, sollicitudin faucibus quam.
+Cras vulputate consectetur molestie. Suspendisse
+            </p>
+            <div class="container-botao">
+                <button>Ler</button>
+          </div>
+
+          <div class="info-content" id="info8">
+            <p>Informação sobre livro 8
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare ante turpis, sed sodales ipsum luctus eget. Sed tempus orci arcu, sit amet porta turpis euismod vel. Proin nisl velit, mattis vel nunc in, aliquet finibus odio. In non venenatis arcu. In eu ex eu ex tristique iaculis. Ut ut viverra augue, ut pulvinar massa. Maecenas sed dolor vel odio rhoncus vestibulum. Sed tincidunt tortor in nisl feugiat, et malesuada est tincidunt. Nunc non nunc purus. Quisque eu erat sit amet dolor venenatis facilisis. Quisque non bibendum urna. Praesent eu turpis sem. Nullam orci elit, dignissim ac quam sed, sollicitudin faucibus quam.
+Cras vulputate consectetur molestie. Suspendisse
+            </p>
+            <div class="container-botao">
+                <button>Ler</button>
+          </div>
+
+          <div class="info-content" id="info9">
+            <p>Informação sobre livro 9
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare ante turpis, sed sodales ipsum luctus eget. Sed tempus orci arcu, sit amet porta turpis euismod vel. Proin nisl velit, mattis vel nunc in, aliquet finibus odio. In non venenatis arcu. In eu ex eu ex tristique iaculis. Ut ut viverra augue, ut pulvinar massa. Maecenas sed dolor vel odio rhoncus vestibulum. Sed tincidunt tortor in nisl feugiat, et malesuada est tincidunt. Nunc non nunc purus. Quisque eu erat sit amet dolor venenatis facilisis. Quisque non bibendum urna. Praesent eu turpis sem. Nullam orci elit, dignissim ac quam sed, sollicitudin faucibus quam.
+Cras vulputate consectetur molestie. Suspendisse
+            </p>
+            <div class="container-botao">
+                <button>Ler</button>
+          </div>
+
+          <div class="info-content" id="info10">
+            <p>Informação sobre livro 10
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare ante turpis, sed sodales ipsum luctus eget. Sed tempus orci arcu, sit amet porta turpis euismod vel. Proin nisl velit, mattis vel nunc in, aliquet finibus odio. In non venenatis arcu. In eu ex eu ex tristique iaculis. Ut ut viverra augue, ut pulvinar massa. Maecenas sed dolor vel odio rhoncus vestibulum. Sed tincidunt tortor in nisl feugiat, et malesuada est tincidunt. Nunc non nunc purus. Quisque eu erat sit amet dolor venenatis facilisis. Quisque non bibendum urna. Praesent eu turpis sem. Nullam orci elit, dignissim ac quam sed, sollicitudin faucibus quam.
+Cras vulputate consectetur molestie. Suspendisse
+            </p>
+            <div class="container-botao">
+                <button>Ler</button>
+          </div>
+
+          <div class="info-content" id="info11">
+            <p>Informação sobre livro 11
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare ante turpis, sed sodales ipsum luctus eget. Sed tempus orci arcu, sit amet porta turpis euismod vel. Proin nisl velit, mattis vel nunc in, aliquet finibus odio. In non venenatis arcu. In eu ex eu ex tristique iaculis. Ut ut viverra augue, ut pulvinar massa. Maecenas sed dolor vel odio rhoncus vestibulum. Sed tincidunt tortor in nisl feugiat, et malesuada est tincidunt. Nunc non nunc purus. Quisque eu erat sit amet dolor venenatis facilisis. Quisque non bibendum urna. Praesent eu turpis sem. Nullam orci elit, dignissim ac quam sed, sollicitudin faucibus quam.
+Cras vulputate consectetur molestie. Suspendisse
+            </p>
+            <div class="container-botao">
+                <button>Ler</button>
+          </div>
+
+          <div class="info-content" id="info12">
+            <p>Informação sobre livro 12
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare ante turpis, sed sodales ipsum luctus eget. Sed tempus orci arcu, sit amet porta turpis euismod vel. Proin nisl velit, mattis vel nunc in, aliquet finibus odio. In non venenatis arcu. In eu ex eu ex tristique iaculis. Ut ut viverra augue, ut pulvinar massa. Maecenas sed dolor vel odio rhoncus vestibulum. Sed tincidunt tortor in nisl feugiat, et malesuada est tincidunt. Nunc non nunc purus. Quisque eu erat sit amet dolor venenatis facilisis. Quisque non bibendum urna. Praesent eu turpis sem. Nullam orci elit, dignissim ac quam sed, sollicitudin faucibus quam.
+Cras vulputate consectetur molestie. Suspendisse
+            </p>
+            <div class="container-botao">
+                <button>Ler</button>
+          </div>
+
     </main>
 
     <footer class="footer">

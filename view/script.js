@@ -58,3 +58,28 @@ document.addEventListener('DOMContentLoaded', () => {
         fadeInObserver.observe(el);
     });
 });
+
+function expandRectangle(rectangle, infoId) {
+    // Mostrar o overlay
+    document.getElementById('overlay').style.display = 'block';
+  
+    // Mostrar o conteúdo de informação correspondente
+    document.getElementById(infoId).style.display = 'block';
+  
+    // Desativar rolagem no corpo
+    document.body.style.overflow = 'hidden';
+  }
+  
+  function closeRectangle() {
+    // Esconder o overlay
+    document.getElementById('overlay').style.display = 'none';
+  
+    // Esconder todos os conteúdos de informação
+    var infos = document.getElementsByClassName('info-content');
+    for (var i = 0; i < infos.length; i++) {
+      infos[i].style.display = 'none';
+    }
+  
+    // Ativar rolagem no corpo
+    document.body.style.overflow = 'auto';
+  }
