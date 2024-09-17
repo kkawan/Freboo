@@ -1,11 +1,449 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+     <link rel="shortcut icon" href="../../img/logo/logo.ico" type="image/x-icon">
 </head>
+
 <body>
+    <!-- nav bar -->
+    <header class="header-navigation" id="header-navigation">
+        <div class="main-container">
+            <nav class="navigation-bar">
+                <!-- Logo -->
+                <div class="navigation-container">
+                    <h1>Freboo</h1>
+                    <div class="navigation-logo">
+                    </div>
+                </div>
+
+                <div class="navigation-right">
+                    <!-- Search bar -->
+                    <div class="group">
+                        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+                        <input placeholder="Search" type="search" class="input">
+                    </div>
+
+                    <!-- Main menu -->
+                    <ul class="navigation-list">
+                        <li class="navigation-item">
+                            <a href="home.html" class="navigation-link">Início</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="books.html" class="navigation-link">Biblioteca</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="blog.html" class="navigation-link">Blog</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="AboutUs.html" class="navigation-link">More</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Arrumar as descrições em p e o titulo em h2, centraliza-los de maneira que fique mais bonito e correto. Se possivel adicionar um sistema de score visual, como estrelas no canto inferior esquerdo e no canto inferior direito inserir um "Ver mais" ou "Ler" -->
+    <!-- Carrossel -->
+<section class="carrossel">
+    <div class="texto-carrossel">
+        <h1 class="h1-carrossel fade-in">Leia sempre</h1>
+        <h3 class="fade-in">Explore nossa coleção</h3>
+    </div>
+    <div class="faixa-carrossel">
+        <div class="item-carrossel">
+            <div class="flip-card">
+                <div class="flip-card-interno">
+                    <div class="flip-card-front">
+                        <img src="../../img/Livros/livro 1.jpg" alt="Imagem 1">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2 class="title">Diário de um Banana</h2>
+                        <p>Uma série que acompanha as aventuras de Greg Heffley, um garoto enfrentando os desafios da adolescência com humor leve e ilustrações engraçadas.</p>
+                        <div class="article-footer">
+                            <div class="article-coracao">
+                                &#9733;&#9733;&#9733;&#9733;&#9734; <!-- Estrelas de avaliação -->
+                            </div>
+                            <a href="link_para_detalhes_do_livro" class="article-link">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-carrossel">
+            <div class="flip-card">
+                <div class="flip-card-interno">
+                    <div class="flip-card-front">
+                        <img src="../../img/Livros/livro 2.jpg" alt="Imagem 2">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2 class="title">Ser Estoico</h2>
+                        <p>Um guia prático sobre os princípios do estoicismo, ensinando como lidar com adversidades com serenidade e sabedoria.</p>
+                        <div class="article-footer">
+                            <div class="article-coracao">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
+                            </div>
+                            <a href="link_para_detalhes_do_livro" class="article-link">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-carrossel">
+            <div class="flip-card">
+                <div class="flip-card-interno">
+                    <div class="flip-card-front">
+                        <img src="../../img/Livros/livro 3.jpg" alt="Imagem 3">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2 class="title">O Pequeno Príncipe</h2>
+                        <p>Uma fábula poética que ensina lições profundas sobre amor, amizade e a essência da vida através da perspectiva de uma criança.</p>
+                        <div class="article-footer">
+                            <div class="article-coracao">
+                                &#9733;&#9733;&#9733;&#9733;&#9734;
+                            </div>
+                            <a href="link_para_detalhes_do_livro" class="article-link">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-carrossel">
+            <div class="flip-card">
+                <div class="flip-card-interno">
+                    <div class="flip-card-front">
+                        <img src="../../img/Livros/livro 4.jpeg" alt="Imagem 4">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2 class="title">O Homem de Giz</h2>
+                        <p>Um thriller psicológico sobre um grupo de amigos cujos desenhos de giz se tornam pistas de um assassinato não resolvido.</p>
+                        <div class="article-footer">
+                            <div class="article-coracao">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
+                            </div>
+                            <a href="link_para_detalhes_do_livro" class="article-link">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-carrossel">
+            <div class="flip-card">
+                <div class="flip-card-interno">
+                    <div class="flip-card-front">
+                        <img src="../../img/Livros/livro 5.jpeg" alt="Imagem 5">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2 class="title">O Que Aconteceu com Annie</h2>
+                        <p>Suspense psicológico sobre um homem que retorna à sua cidade natal para desvendar o mistério do desaparecimento de sua irmã.</p>
+                        <div class="article-footer">
+                            <div class="article-coracao">
+                                &#9733;&#9733;&#9733;&#9733;&#9734;
+                            </div>
+                            <a href="link_para_detalhes_do_livro" class="article-link">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-carrossel">
+            <div class="flip-card">
+                <div class="flip-card-interno">
+                    <div class="flip-card-front">
+                        <img src="../../img/Livros/livro 6.jpg" alt="Imagem 6">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2 class="title">Breves Respostas para Grandes Questões</h2>
+                        <p>Stephen Hawking explora grandes questões sobre a existência, o universo, e o futuro da humanidade.</p>
+                        <div class="article-footer">
+                            <div class="article-coracao">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
+                            </div>
+                            <a href="link_para_detalhes_do_livro" class="article-link">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-carrossel">
+            <div class="flip-card">
+                <div class="flip-card-interno">
+                    <div class="flip-card-front">
+                        <img src="../../img/Livros/livro 7.jpg" alt="Imagem 7">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2 class="title">Garotas em Chamas</h2>
+                        <p>Um thriller sobre uma comunidade marcada por desaparecimentos misteriosos e uma velha lenda de garotas queimadas como bruxas.</p>
+                        <div class="article-footer">
+                            <div class="article-coracao">
+                                &#9733;&#9733;&#9733;&#9733;&#9734;
+                            </div>
+                            <a href="link_para_detalhes_do_livro" class="article-link">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-carrossel">
+            <div class="flip-card">
+                <div class="flip-card-interno">
+                    <div class="flip-card-front">
+                        <img src="../../img/Livros/livro 8.jpg" alt="Imagem 8">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2 class="title">Dom Quixote</h2>
+                        <p>O clássico romance de Cervantes sobre um cavaleiro que embarca em aventuras fantasiosas, enfrentando moinhos de vento que acredita serem gigantes.</p>
+                        <div class="article-footer">
+                            <div class="article-coracao">
+                                &#9733;&#9733;&#9733;&#9733;&#9734;
+                            </div>
+                            <a href="link_para_detalhes_do_livro" class="article-link">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-carrossel">
+            <div class="flip-card">
+                <div class="flip-card-interno">
+                    <div class="flip-card-front">
+                        <img src="../../img/Livros/livro 9.jpg" alt="Imagem 9">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2 class="title">Senhora</h2>
+                        <p>O romance realista de José de Alencar que explora a vingança, o amor e a moralidade na sociedade do século XIX.</p>
+                        <div class="article-footer">
+                            <div class="article-coracao">
+                                &#9733;&#9733;&#9733;&#9733;&#9734;
+                            </div>
+                            <a href="link_para_detalhes_do_livro" class="article-link">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Artigos -->
+    <section class="article-section">
+        <div class="article-header fade-in">
+            <h1 class="article-title">Explore Nossos Artigos</h1>
+            <h3>Descubra, Aprenda e Inspire-se</h3>
+        </div>
+        <div class="article-grid">
+            <div class="article-item">
+                <img src="../../img/Artigos/poema 2.jpg" alt="Artigo 1">
+                <div class="article-content">
+                    <h2 class="article-item-title">Meu casca de bala</h2>
+                    <p>Sob a lua, no silêncio da calada, Você é meu parceiro, minha jornada. Seu sorriso é leve, como
+                        brisa encantada, Você é meu amigo, minha casca de bala.
+                        Nos momentos difíceis, quando a vida se embala, Você é todo amostradinho, minha força abalada. Com suas palavras, sempre bem colocadas,  ...</p>
+                    <br>
+                    <div class="article-footer">
+                        <div class="article-coracao">
+                            <label class="container">
+                                <input checked="checked" type="checkbox">
+                                <div class="checkmark">
+                                    <svg viewBox="0 0 256 256">
+                                        <rect fill="none" height="256" width="256"></rect>
+                                        <path
+                                            d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z"
+                                            stroke-width="20px" stroke="#000" fill="none"></path>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                        <a href="blog.html" class="article-link">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="article-item">
+                <img src="../../img/Artigos/leitura 2.jpeg" alt="Artigo 2">
+                <div class="article-content">
+                    <h2 class="article-item-title">Os benefícios da leitura para a saúde mental</h2>
+                    <p><p>A leitura é uma atividade poderosa que pode trazer inúmeros benefícios para a saúde mental e o bem-estar emocional. Ela estimula a mente, ajudando a manter o cérebro ativo e engajado, o que pode reduzir o risco de declínio ...</p>
+                    <div class="article-footer">
+                        <div class="article-coracao"><label class="container">
+                                <input checked="checked" type="checkbox">
+                                <div class="checkmark">
+                                    <svg viewBox="0 0 256 256">
+                                        <rect fill="none" height="256" width="256"></rect>
+                                        <path
+                                            d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z"
+                                            stroke-width="20px" stroke="#000" fill="none"></path>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                        <a href="blog.html" class="article-link">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="article-item">
+                <img src="../../img/Artigos/article 4.jpg" alt="Artigo 1">
+                <div class="article-content">
+                    <h2 class="article-item-title">Lorem Ipsum</h2>
+                    <p>Suspendisse eleifend sapien quis dapibus dictum. Etiam viverra aliquet purus, eu elementum ligula eleifend vel. In porta mi quis gravida posuere. Sed sollicitudin congue sapien sit amet volutpat. Mauris sagittis nibh ac eros porttitor efficitur vel sed eros. Etiam mauris diam, dapibus vel lectus in, maximus commodo turpis. Sed feugiat risus n  ...</p>
+                    <br>
+                    <div class="article-footer">
+                        <div class="article-coracao">
+                            <label class="container">
+                                <input checked="checked" type="checkbox">
+                                <div class="checkmark">
+                                    <svg viewBox="0 0 256 256">
+                                        <rect fill="none" height="256" width="256"></rect>
+                                        <path
+                                            d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z"
+                                            stroke-width="20px" stroke="#000" fill="none"></path>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                        <a href="blog.html" class="article-link">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="article-item">
+                <img src="../../img/Artigos/article 3.jpg" alt="Artigo 1">
+                <div class="article-content">
+                    <h2 class="article-item-title">Os inserção da leitura </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere, ante in blandit viverra, dui orci cursus ex, sed congue libero eros id nisl. Curabitur pulvinar eget libero tempor sollicitudin. Phasellus at posuere orci, sagittis imperdiet urna. In a metus eu sem euismod auctor eget sit amet arcu. Nam at tincidunt turpis. Vestib...</p>
+                    <br>
+                    <div class="article-footer">
+                        <div class="article-coracao">
+                            <label class="container">
+                                <input checked="checked" type="checkbox">
+                                <div class="checkmark">
+                                    <svg viewBox="0 0 256 256">
+                                        <rect fill="none" height="256" width="256"></rect>
+                                        <path
+                                            d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z"
+                                            stroke-width="20px" stroke="#000" fill="none"></path>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                        <a href="blog.html" class="article-link">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section class="about-us">
+        <div class="about-us-header fade-in">
+            <h1 class="about-us-title">Sobre Nós</h1>
+            <h3>Conheça nossa equipe dedicada</h3>
+        </div>
+        <div class="team-grid">
+            <div class="card">
+                <div class="image-box">
+                    <img class="fotos-time-ana"src="../../img/Sobre mim/ana 3.jpeg" alt="Membro 1">
+                </div>
+                <div class="content">
+                    <h2>Ana Julia</h2>
+                    <p>Ana é especialista em marketing digital, responsável por criar estratégias que conectam nossa
+                        marca ao público.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img src="../../img/Sobre mim/Henrique.jpeg" alt="Membro 2">
+                </div>
+                <div class="content">
+                    <h2>Henrique Lizotti</h2>
+                    <p>Henrique é nosso desenvolvedor web, apaixonado por criar interfaces incríveis e experiências
+                        digitais memoráveis.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img class="fotos-time-kawan" src="../../img/Sobre mim/kawan 2.jpeg" alt="Membro 3">
+                </div>
+                <div class="content">
+                    <h2>Kawan Shigueo</h2>
+                    <p>Kawan cuida do design gráfico, trazendo identidade visual e estética para cada projeto que
+                        desenvolvemos.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img class="fotos-time-mariana"src="../../img/Sobre mim/mariana.jpeg" alt="Membro 4">
+                </div>
+                <div class="content">
+                    <h2>Mariana Yumi</h2>
+                    <p>Mariana é o gerente de projetos, garantindo que todas as entregas sejam feitas no prazo e com a máxima qualidade.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-botao">
+            <a href="AboutUs.html">
+                <button>Ver mais</button>
+            </a>
+        </div>
+    </section>
+
+
+   
+    <!-- Criar um footer -->
+    <footer class="footer">
+        <div class="footer-content fade-in">
+            <div class="footer-logo">
+                <h2>Freboo</h2>
+                <p>Conectando você aos melhores livros e recursos para sua leitura diária.</p>
+            </div>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <p>(00) 0000-000</p>
+                    <p>info@meusite.com</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Endereço</h3>
+                    <p>Rua JK, 1626 - Unifil</p>
+                    <p>Londrina - PR, 0000-000</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Assine nossa Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Insira seu email aqui" required>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Freboo. Todos os direitos reservados.</p>
+            <ul class="footer-social">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
     
+    <script src="../js/script.js"></script>
 </body>
+
 </html>
