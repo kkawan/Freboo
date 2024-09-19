@@ -13,3 +13,5 @@ Freboo é um projeto de acervo de livros com blog, desenvolvido para um projeto 
   - HTML5
   - CSS3
   - JavaScript
+
+![Demonstração do Freboo](./video%20freboo%20home.gif)
